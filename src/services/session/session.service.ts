@@ -4,10 +4,10 @@ import { GameInterface } from 'src/models/game/game.interface';
 import { Player } from 'src/models/game/player/player.class';
 @Injectable()
 export class SessionService {
-    constructor(){this.createSession()}
+    constructor(){}
 games:GameInterface[] = [];
-    createSession(){
-        let game = new Game()
+    createSession(player1:string,player2:string){
+        let game = new Game(player1,player2)
         //this.games[""+game.id] = game
         this.games[0] = game
         

@@ -5,9 +5,10 @@ import { ChessBoardController } from './controllers/chess-board/chess-board.cont
 import { ChessBoardService } from './controllers/chess-board/chess-board.service';
 import { SessionService } from './services/session/session.service';
 import { SessionController } from './controllers/session/session.controller';
+import { AuthModule } from './auth/auth.module';
 
 @Module({
-  imports: [],
+  imports: [ AuthModule],
   controllers: [AppController,ChessBoardController, SessionController],
   providers: [AppService,ChessBoardService,SessionService],
 })

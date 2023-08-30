@@ -7,7 +7,7 @@ export class SessionController {
    @Get()
      great(){
         console.log("hi")
-        let fisch = this.sessionService.createSession()
-        return fisch
+       /*  let fisch = this.sessionService.createSession()
+        return fisch */
     }
 }
